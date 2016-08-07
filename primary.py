@@ -9,6 +9,7 @@ from flask import Flask, request
 from twilio import twiml
 from twilio.rest import TwilioRestClient
 from time import sleep
+from pysqlite2 import dbapi2 as sqlite
 
 # allows for use of the flask decorator
 app = Flask(__name__)
@@ -43,6 +44,7 @@ def notify():
 
 @app.route('/signup', methods=['POST'])
 def signup():
+    name = request.form['Name']  # will hold a user's name
     warning = request.form['Days']  # will hold the amount of days before a payment notification is sent
     phone = request.form['Phone']  # will receive the user's phone number
 
