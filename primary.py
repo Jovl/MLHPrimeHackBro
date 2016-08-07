@@ -8,8 +8,6 @@ This File: Will run the backend of the website and control the Twilio functional
 from flask import Flask, request
 from twilio import twiml
 from twilio.rest import TwilioRestClient
-from time import sleep
-import jsonify
 
 # allows for use of the flask decorator
 app = Flask(__name__)
@@ -18,20 +16,72 @@ app = Flask(__name__)
 client = TwilioRestClient('ACff5b36cf0ccdc108d7297d213891351b', '2c36f2c692e1a0f87dbc0c91d33135e6')
 
 
-def dict_factory(cursor, row):
-    d = {}
-    for idx, col in enumerate(cursor.description):
-        d[col[0]] = row[idx]
-    return d
-
-
-@app.route('/receive', methods=['GET', 'POST'])  # WIP
+@app.route('/receive', methods=['POST'])  # WIP
 def home1():
+    services = ['Netflix', 'Hulu', 'Prime', 'Spotify']
+
     text = request.form['Body']
-    print text
-    response = twiml.Response()
-    response.message('Hey dude')
-    return str(response)
+    print text  # checks what the text message said
+
+    tmessage = text.split()
+    print tmessage
+
+    for y in tmessage:
+        print y
+        if y is services[0]:
+            service = y
+            for x in tmessage:
+                print x
+                if x is 'delete':
+                    response = twiml.Response()
+                    response.message('%s has been removed' % service)
+                elif x == 'remove':
+                    response = twiml.Response()
+                    response.message('%s has been removed' % service)
+                elif x == 'cancel':
+                    response = twiml.Response()
+                    response.message('%s has been removed' % service)
+
+        elif y == services[1]:
+            service = y
+            for x in tmessage:
+                if x == 'delete':
+                    response = twiml.Response()
+                    response.message('%s has been removed' % service)
+                elif x == 'remove':
+                    response = twiml.Response()
+                    response.message('%s has been removed' % service)
+                elif x == 'cancel':
+                    response = twiml.Response()
+                    response.message('%s has been removed' % service)
+
+        elif y == services[2]:
+            service = y
+            for x in tmessage:
+                if x == 'delete':
+                    response = twiml.Response()
+                    response.message('%s has been removed' % service)
+                elif x == 'remove':
+                    response = twiml.Response()
+                    response.message('%s has been removed' % service)
+                elif x == 'cancel':
+                    response = twiml.Response()
+                    response.message('%s has been removed' % service)
+
+        elif y == services[3]:
+            service = y
+            for x in tmessage:
+                if x == 'delete':
+                    response = twiml.Response()
+                    response.message('%s has been removed' % service)
+                elif x == 'remove':
+                    response = twiml.Response()
+                    response.message('%s has been removed' % service)
+                elif x == 'cancel':
+                    response = twiml.Response()
+                    response.message('%s has been removed' % service)
+
+    return 'All good'
 
 
 @app.route('/notify', methods=['POST'])  # path is temporary. Not sure what to name it.
