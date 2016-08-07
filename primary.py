@@ -30,8 +30,9 @@ def home1():
 
 
 @app.route('/notify')  # path is temporary. Not sure what to name it.
-def notify():
+def notify(warning, phone):
     # TODO: Call database for the day of a warning and the user phone number
+    contacts = select_phone_warning(warning, phone)
 
     for daysleft in range(10, warning, -1):  # demo purposes simulates days counting down
         print daysleft + " days left"
