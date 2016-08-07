@@ -9,7 +9,7 @@ from flask import Flask, request
 from twilio import twiml
 from twilio.rest import TwilioRestClient
 from time import sleep
-from models import *
+import jsonify
 
 # allows for use of the flask decorator
 app = Flask(__name__)
@@ -34,31 +34,43 @@ def home1():
     return str(response)
 
 
-@app.route('/notify')  # path is temporary. Not sure what to name it.
+@app.route('/notify', methods=['POST'])  # path is temporary. Not sure what to name it.
 def notify():
     # TODO: Call database for the day of a warning and the user phone number
-    info = select_phone_warning()
+    # info = select_phone_warning()  # for DB
 
-    for daysleft in range(10, info['warning'], -1):  # demo purposes simulates days counting down
-        print daysleft + " days left"
+    # name = request.form['Name']  # will hold a user's name
+    warning = int(request.form['Days'])  # will hold the amount of days before a payment notification is sent
+    phone = request.form['Phone']  # wil
+    # l receive the user's phone number
 
-        if daysleft == info['warning']:
-            client.messages.create(to=info['phone'], from_='3862678050',
-                                   body='Your account has %d days before a payment is automatically made' % daysleft)
-        sleep(1)
+    print warning
+    print phone
 
-    return
+    for daysleft in range(10, warning, -1):  # demo purposes simulates days counting down
+        print str(daysleft) + " days left"
+
+        if daysleft == warning + 1:
+            message = client.messages.create(to=phone, from_='13862678050',
+                                             body='Your account will be charged in %d days' % warning)
+            response = twiml.Response()
+            response.message(message)
+
+    return_info = {
+        'Warning Days': warning,
+        'Recipient': phone,
+        'Result': 'All good'
+    }
+
+    return str(return_info)
 
 
-@app.route('/signup', methods=['POST'])
-def signup():
-    name = request.form['Name']  # will hold a user's name
-    warning = request.form['Days']  # will hold the amount of days before a payment notification is sent
-    phone = request.form['Phone']  # will receive the user's phone number
-
-    return insert_account_holder(name, warning, phone)
-
-
+# @app.route('/signup', methods=['GET', 'POST'])
+# def signup():
+#
+#
+#     # return insert_account_holder(name, warning, phone)  # for DB
+#     return userinfo
 
 if __name__ == "__main__":
     app.run()
