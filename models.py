@@ -1,18 +1,26 @@
 import sqlite3 as sql
 
 
-def insert_account_holder(name,warning,phone):
+def insert_account_holder(name, warning, phone):
     con = sql.connect("database.db")
     cur = con.cursor()
-    cur.execute("INSERT INTO account_holder (name,warning,phone) VALUES (?,?,?)",
+    cur.execute("INSERT INTO account_holder (name,warning,phone) VALUES (%s,%s,%s)",
                 (name, warning, phone))
     con.commit()
     con.close()
 
-def select_phone_warning(warning, phone);
+
+def select_phone_warning():
+    warning = ''
+    phone = ''
     con = sql.connect("database.db")
     cur = con.cursor()
     cur.execute("SELECT warning,phone FROM account_holder ",
-                (warning,phone))
+                (warning, phone))
+    info = {
+        'warning': warning,
+        'phone': phone
+    }
     con.commit()
     con.close()
+    return info
