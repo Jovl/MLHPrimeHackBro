@@ -11,6 +11,11 @@ import UIKit
 class SignUpViewController: UIViewController {
     var user: User = User()
     
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var accountNumber: UITextField!
+    @IBOutlet weak var routingNumber: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,5 +24,13 @@ class SignUpViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func signUp(sender: AnyObject) {
+        
+    }
+
+    @IBAction func cancel(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true) { }
     }
 }

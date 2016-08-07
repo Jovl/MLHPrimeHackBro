@@ -18,26 +18,84 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLo-TX-UY0">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Next screen"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CdI-qd-4iQ">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="159" y="385" width="83" height="30"/>
+                                    <rect key="frame" x="141" y="259" width="239" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i2l-pY-Wny">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="141" y="297" width="239" height="30"/>
+                                </variation>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJv-LI-SKZ">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="43" y="263" width="79" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVm-rz-wAF">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="48" y="301" width="74" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVo-YY-cOa">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.015686274510000001" green="0.42352941179999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="248" y="385" width="38" height="30"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="l8s-Wf-ONO" kind="show" id="rIz-zE-tGp"/>
+                                    <segue destination="l8s-Wf-ONO" kind="show" id="zbu-fQ-hIP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqC-Ej-zmV">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="0.015686274510000001" green="0.42352941179999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="104" y="385" width="55" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="jPS-x2-m2R" kind="show" id="KCg-Nv-Tvd"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="dLo-TX-UY0"/>
+                                <exclude reference="CdI-qd-4iQ"/>
+                                <exclude reference="i2l-pY-Wny"/>
+                                <exclude reference="tJv-LI-SKZ"/>
+                                <exclude reference="OVm-rz-wAF"/>
+                                <exclude reference="UVo-YY-cOa"/>
+                                <exclude reference="fqC-Ej-zmV"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="dLo-TX-UY0"/>
+                                <include reference="CdI-qd-4iQ"/>
+                                <include reference="i2l-pY-Wny"/>
+                                <include reference="tJv-LI-SKZ"/>
+                                <include reference="OVm-rz-wAF"/>
+                                <include reference="UVo-YY-cOa"/>
+                                <include reference="fqC-Ej-zmV"/>
                             </mask>
                         </variation>
                     </view>
@@ -46,6 +104,175 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-96" y="182.25"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="h5w-JI-m8Y">
+            <objects>
+                <viewController id="jPS-x2-m2R" customClass="SignUpViewController" customModule="mlhprime_hackbro" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="THM-Dq-Emu"/>
+                        <viewControllerLayoutGuide type="bottom" id="NLO-wu-5Gy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XX9-8o-x4Q">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JrD-p9-H1y">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="136" y="210" width="244" height="30"/>
+                                </variation>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5w-Jc-HZD">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="38" y="176" width="90" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zkj-gi-cSc">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="49" y="214" width="79" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lQG-ft-kqM">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="136" y="303" width="244" height="30"/>
+                                </variation>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bank Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubP-U8-tNu">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="120" y="257" width="160" height="38"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account number:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWF-zN-AzO">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="307" width="128" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="af6-c4-xmF">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="136" y="341" width="244" height="30"/>
+                                </variation>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Routing number:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWg-c0-vql">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="345" width="127" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pwm-hK-iry">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="123" y="118" width="155" height="30"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vrc-DD-2AM">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Sign up">
+                                    <color key="titleColor" red="0.015686274510000001" green="0.42352941179999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="232" y="450" width="52" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="signUp:" destination="jPS-x2-m2R" eventType="touchUpInside" id="FTq-0h-sJY"/>
+                                    <segue destination="l8s-Wf-ONO" kind="show" id="6cc-Ro-GZS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VfL-34-Ng4">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.015686274510000001" green="0.42352941179999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="105" y="450" width="48" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="cancel:" destination="jPS-x2-m2R" eventType="touchUpInside" id="Lff-uG-R4L"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vMQ-3U-0kt">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="136" y="172" width="244" height="30"/>
+                                </variation>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="JrD-p9-H1y"/>
+                                <exclude reference="L5w-Jc-HZD"/>
+                                <exclude reference="Zkj-gi-cSc"/>
+                                <exclude reference="lQG-ft-kqM"/>
+                                <exclude reference="ubP-U8-tNu"/>
+                                <exclude reference="WWF-zN-AzO"/>
+                                <exclude reference="af6-c4-xmF"/>
+                                <exclude reference="zWg-c0-vql"/>
+                                <exclude reference="Pwm-hK-iry"/>
+                                <exclude reference="Vrc-DD-2AM"/>
+                                <exclude reference="VfL-34-Ng4"/>
+                                <exclude reference="vMQ-3U-0kt"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="JrD-p9-H1y"/>
+                                <include reference="L5w-Jc-HZD"/>
+                                <include reference="Zkj-gi-cSc"/>
+                                <include reference="lQG-ft-kqM"/>
+                                <include reference="ubP-U8-tNu"/>
+                                <include reference="WWF-zN-AzO"/>
+                                <include reference="af6-c4-xmF"/>
+                                <include reference="zWg-c0-vql"/>
+                                <include reference="Pwm-hK-iry"/>
+                                <include reference="Vrc-DD-2AM"/>
+                                <include reference="VfL-34-Ng4"/>
+                                <include reference="vMQ-3U-0kt"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="accountNumber" destination="lQG-ft-kqM" id="Mo2-4L-sdT"/>
+                        <outlet property="password" destination="JrD-p9-H1y" id="iDk-Gq-bhH"/>
+                        <outlet property="routingNumber" destination="af6-c4-xmF" id="XvD-c4-r1e"/>
+                        <outlet property="signUp" destination="Vrc-DD-2AM" id="8yQ-OH-Cqz"/>
+                        <outlet property="username" destination="vMQ-3U-0kt" id="UNi-jb-0Q8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kyN-QJ-J13" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-96" y="889.5"/>
         </scene>
         <!--Set Up Payment View Controller-->
         <scene sceneID="bpm-YT-qHH">
@@ -214,6 +441,32 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Has-bZ-nxS">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DQx-rS-9m4"/>
+                                    <constraint firstAttribute="width" constant="30" id="Jpn-GQ-p6v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="S">
+                                    <color key="titleColor" red="0.015686274509803921" green="0.42352941176470588" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="DQx-rS-9m4"/>
+                                        <exclude reference="Jpn-GQ-p6v"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="DQx-rS-9m4"/>
+                                        <include reference="Jpn-GQ-p6v"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="selectDay:" destination="P0G-xR-dtP" eventType="touchUpInside" id="ytM-sE-t9a"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Mb-Y9-jet">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <constraints>
@@ -370,30 +623,31 @@
                                     <action selector="selectDay:" destination="P0G-xR-dtP" eventType="touchUpInside" id="AUT-aK-1f9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Has-bZ-nxS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7c-os-MUX">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="DQx-rS-9m4"/>
-                                    <constraint firstAttribute="width" constant="30" id="Jpn-GQ-p6v"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="S">
-                                    <color key="titleColor" red="0.015686274509803921" green="0.42352941176470588" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="20"/>
+                                <state key="normal" title="Edit">
+                                    <color key="titleColor" red="0.015686274510000001" green="0.42352941179999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="DQx-rS-9m4"/>
-                                        <exclude reference="Jpn-GQ-p6v"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="DQx-rS-9m4"/>
-                                        <include reference="Jpn-GQ-p6v"/>
-                                    </mask>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="227" y="673" width="60" height="40"/>
                                 </variation>
                                 <connections>
-                                    <action selector="selectDay:" destination="P0G-xR-dtP" eventType="touchUpInside" id="ytM-sE-t9a"/>
+                                    <action selector="saveNewPayment:" destination="P0G-xR-dtP" eventType="touchUpInside" id="fYH-SW-RYV"/>
+                                    <segue destination="76d-56-PIG" kind="show" id="9B0-W1-0Eh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJL-dx-FAf">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="20"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.015686274510000001" green="0.42352941179999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="113" y="672" width="66" height="43"/>
+                                </variation>
+                                <connections>
+                                    <action selector="cancel:" destination="P0G-xR-dtP" eventType="touchUpInside" id="blH-21-nJk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -462,13 +716,15 @@
                                 <exclude reference="tFH-rW-1Wz"/>
                                 <exclude reference="GKX-2e-qSA"/>
                                 <exclude reference="uTJ-Zd-Tlg"/>
+                                <exclude reference="Has-bZ-nxS"/>
                                 <exclude reference="4Mb-Y9-jet"/>
                                 <exclude reference="fCK-YP-rrq"/>
                                 <exclude reference="XQI-ad-4Pa"/>
                                 <exclude reference="Is8-Vz-mic"/>
                                 <exclude reference="kKS-iu-262"/>
                                 <exclude reference="V7e-7U-DoC"/>
-                                <exclude reference="Has-bZ-nxS"/>
+                                <exclude reference="p7c-os-MUX"/>
+                                <exclude reference="MJL-dx-FAf"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="OgA-WO-vgj"/>
@@ -533,13 +789,15 @@
                                 <include reference="tFH-rW-1Wz"/>
                                 <include reference="GKX-2e-qSA"/>
                                 <include reference="uTJ-Zd-Tlg"/>
+                                <include reference="Has-bZ-nxS"/>
                                 <include reference="4Mb-Y9-jet"/>
                                 <include reference="fCK-YP-rrq"/>
                                 <include reference="XQI-ad-4Pa"/>
                                 <include reference="Is8-Vz-mic"/>
                                 <include reference="kKS-iu-262"/>
                                 <include reference="V7e-7U-DoC"/>
-                                <include reference="Has-bZ-nxS"/>
+                                <include reference="p7c-os-MUX"/>
+                                <include reference="MJL-dx-FAf"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="OgA-WO-vgj"/>
@@ -599,6 +857,7 @@
                         <outlet property="paymentFrequency" destination="wXC-se-cuo" id="ZF7-Uu-G0S"/>
                         <outlet property="paymentName" destination="MBT-jK-IOn" id="AB0-Hi-urV"/>
                         <outlet property="saturday" destination="V7e-7U-DoC" id="RoM-XG-Skw"/>
+                        <outlet property="saveNewPayment" destination="p7c-os-MUX" id="9q2-bc-gl4"/>
                         <outlet property="sunday" destination="Has-bZ-nxS" id="PkV-jD-uLS"/>
                         <outlet property="thursday" destination="Is8-Vz-mic" id="6IE-Jm-iLS"/>
                         <outlet property="tuesday" destination="fCK-YP-rrq" id="P3p-ss-gu2"/>
@@ -609,6 +868,91 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q2x-Cg-Nhe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="889.5"/>
+        </scene>
+        <!--Notifications View Controller-->
+        <scene sceneID="YcU-rK-vLn">
+            <objects>
+                <viewController id="76d-56-PIG" customClass="NotificationsViewController" customModule="mlhprime_hackbro" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nyh-Ck-mDB"/>
+                        <viewControllerLayoutGuide type="bottom" id="ljB-YI-TZk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z1z-cp-nbL">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nn3-8H-0Pm">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="113" y="94" width="175" height="40"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2d-G9-rte">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="Untitled drawing.png"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="323" y="99" width="30" height="30"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KM7-TT-m0p">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="20"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.015686274510000001" green="0.42352941179999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="333" y="752" width="47" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="save:" destination="76d-56-PIG" eventType="touchUpInside" id="Fb0-9D-MEz"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cwr-wE-LBt">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="tYu-dm-L7x">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tYu-dm-L7x" id="I2B-g0-a7W">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="167" width="400" height="577"/>
+                                </variation>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="nn3-8H-0Pm"/>
+                                <exclude reference="e2d-G9-rte"/>
+                                <exclude reference="KM7-TT-m0p"/>
+                                <exclude reference="cwr-wE-LBt"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="nn3-8H-0Pm"/>
+                                <include reference="e2d-G9-rte"/>
+                                <include reference="KM7-TT-m0p"/>
+                                <include reference="cwr-wE-LBt"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="add" destination="e2d-G9-rte" id="Jv9-yv-2Yc"/>
+                        <outlet property="save" destination="KM7-TT-m0p" id="VM1-HQ-E0N"/>
+                        <outlet property="tableView" destination="cwr-wE-LBt" id="EsN-CR-IB6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XTq-PQ-kvI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1513.5" y="889.5"/>
         </scene>
         <!--PaymentListViewController-->
         <scene sceneID="g7T-6K-OUm">
@@ -638,9 +982,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="P0G-xR-dtP" kind="show" id="7pO-TE-B3L"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -723,6 +1064,92 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqD-Hx-rL0">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kp0-kJ-WiD">
+                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="25"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="139" y="17" width="83" height="44"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$11.25" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9l6-FN-fu0">
+                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="53"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="88" y="134" width="184" height="83"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recurring monthly" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYY-I7-FLc">
+                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="102" y="233" width="156" height="21"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14 November, 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOo-jK-KgQ">
+                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="83" y="91" width="195" height="21"/>
+                                        </variation>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRa-Og-atc">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal" title="Edit">
+                                            <color key="titleColor" red="0.015686274510000001" green="0.42352941179999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="228" y="292" width="30" height="30"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="editPayment:" destination="l8s-Wf-ONO" eventType="touchUpInside" id="nCl-oz-zaZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMd-if-x2e">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" red="0.015686274510000001" green="0.42352941179999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="110" y="292" width="48" height="30"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="exitEdit:" destination="l8s-Wf-ONO" eventType="touchUpInside" id="zTL-Kd-gDc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="kp0-kJ-WiD"/>
+                                        <exclude reference="9l6-FN-fu0"/>
+                                        <exclude reference="GYY-I7-FLc"/>
+                                        <exclude reference="DOo-jK-KgQ"/>
+                                        <exclude reference="pRa-Og-atc"/>
+                                        <exclude reference="fMd-if-x2e"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="161" width="360" height="366"/>
+                                    <mask key="subviews">
+                                        <include reference="kp0-kJ-WiD"/>
+                                        <include reference="9l6-FN-fu0"/>
+                                        <include reference="GYY-I7-FLc"/>
+                                        <include reference="DOo-jK-KgQ"/>
+                                        <include reference="pRa-Og-atc"/>
+                                        <include reference="fMd-if-x2e"/>
+                                    </mask>
+                                </variation>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNz-2S-ATO">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <constraints>
@@ -778,6 +1205,7 @@
                                 <exclude reference="l6w-ZW-pgP"/>
                                 <exclude reference="zqB-vF-5GQ"/>
                                 <exclude reference="RDD-cJ-x1J"/>
+                                <exclude reference="hqD-Hx-rL0"/>
                                 <exclude reference="kNz-2S-ATO"/>
                             </mask>
                             <mask key="constraints">
@@ -807,6 +1235,7 @@
                                 <include reference="l6w-ZW-pgP"/>
                                 <include reference="zqB-vF-5GQ"/>
                                 <include reference="RDD-cJ-x1J"/>
+                                <include reference="hqD-Hx-rL0"/>
                                 <include reference="kNz-2S-ATO"/>
                             </mask>
                             <mask key="constraints">
@@ -832,7 +1261,12 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Jmb-uk-GfB"/>
                     <connections>
-                        <outlet property="editView" destination="WYZ-h7-1mC" id="5q8-ca-Nbc"/>
+                        <outlet property="editView" destination="hqD-Hx-rL0" id="ClI-HH-aZi"/>
+                        <outlet property="editViewAmount" destination="9l6-FN-fu0" id="Cc7-un-Cte"/>
+                        <outlet property="editViewDate" destination="DOo-jK-KgQ" id="Aeh-h8-k9A"/>
+                        <outlet property="editViewFrequency" destination="GYY-I7-FLc" id="onv-Yu-gR2"/>
+                        <outlet property="editViewName" destination="kp0-kJ-WiD" id="oQT-ER-Ykt"/>
+                        <outlet property="exitEdit" destination="fMd-if-x2e" id="w3z-tY-sqz"/>
                         <outlet property="paymentlist" destination="Bef-Po-YWo" id="syQ-Ua-ydb"/>
                     </connections>
                 </viewController>
@@ -861,6 +1295,6 @@
         <image name="Untitled drawing.png" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="HZG-Wn-eUe"/>
+        <segue reference="6cc-Ro-GZS"/>
     </inferredMetricsTieBreakers>
 </document>

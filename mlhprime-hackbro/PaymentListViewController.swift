@@ -14,6 +14,10 @@ class PaymentListViewController: UIViewController, UITableViewDelegate, UITableV
     
     @IBOutlet weak var paymentlist: UITableView!
     @IBOutlet weak var editView: UIView!
+    @IBOutlet weak var editViewName: UILabel!
+    @IBOutlet weak var editViewDate: UILabel!
+    @IBOutlet weak var editViewAmount: UILabel!
+    @IBOutlet weak var editViewFrequency: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,5 +75,12 @@ class PaymentListViewController: UIViewController, UITableViewDelegate, UITableV
         edit.backgroundColor = UIColor.greenColor()
         
         return [delete, edit]
+    }
+    @IBAction func editPayment(sender: AnyObject) {
+        
+    }
+    
+    @IBAction func exitEdit(sender: AnyObject) {
+        editView.hidden = true
     }
 }

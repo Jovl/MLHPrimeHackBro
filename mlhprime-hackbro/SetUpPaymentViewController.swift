@@ -46,6 +46,14 @@ class SetUpPaymentViewController: UIViewController {
         }
     }
     
+//    @IBAction func cancel(sender: AnyObject) {
+//        self.dismissViewControllerAnimated(false) { }
+//    }
+    
+//    @IBAction func saveNewPayment(sender: AnyObject) {
+//        
+//    }
+    
     func pushNewPayment() {
         
     }

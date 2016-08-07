@@ -21,6 +21,11 @@
 		6DBACE691D568B9200FC4FEC /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBACE681D568B9200FC4FEC /* Payment.swift */; };
 		6DBACE6B1D56A20F00FC4FEC /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBACE6A1D56A20F00FC4FEC /* PageViewController.swift */; };
 		6DBACE701D56F1A300FC4FEC /* Untitled drawing.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DBACE6F1D56F1A300FC4FEC /* Untitled drawing.png */; };
+		6DBACE761D570E1A00FC4FEC /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBACE721D570E1900FC4FEC /* Fabric.framework */; };
+		6DBACE771D570E1A00FC4FEC /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBACE731D570E1900FC4FEC /* TwitterKit.framework */; };
+		6DBACE781D570E1A00FC4FEC /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6DBACE741D570E1900FC4FEC /* TwitterKitResources.bundle */; };
+		6DBACE791D570E1A00FC4FEC /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBACE751D570E1900FC4FEC /* TwitterCore.framework */; };
+		6DBACE7B1D574C0500FC4FEC /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBACE7A1D574C0500FC4FEC /* NotificationsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +57,11 @@
 		6DBACE681D568B9200FC4FEC /* Payment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 		6DBACE6A1D56A20F00FC4FEC /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		6DBACE6F1D56F1A300FC4FEC /* Untitled drawing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Untitled drawing.png"; sourceTree = "<group>"; };
+		6DBACE721D570E1900FC4FEC /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		6DBACE731D570E1900FC4FEC /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		6DBACE741D570E1900FC4FEC /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		6DBACE751D570E1900FC4FEC /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		6DBACE7A1D574C0500FC4FEC /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DBACE761D570E1A00FC4FEC /* Fabric.framework in Frameworks */,
+				6DBACE791D570E1A00FC4FEC /* TwitterCore.framework in Frameworks */,
+				6DBACE771D570E1A00FC4FEC /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +88,10 @@
 		6D0F9FC41D5672EA003B2340 = {
 			isa = PBXGroup;
 			children = (
+				6DBACE721D570E1900FC4FEC /* Fabric.framework */,
+				6DBACE731D570E1900FC4FEC /* TwitterKit.framework */,
+				6DBACE741D570E1900FC4FEC /* TwitterKitResources.bundle */,
+				6DBACE751D570E1900FC4FEC /* TwitterCore.framework */,
 				6D0F9FCF1D5672EA003B2340 /* mlhprime-hackbro */,
 				6D0F9FE41D5672EA003B2340 /* mlhprime-hackbroTests */,
 				6D0F9FCE1D5672EA003B2340 /* Products */,
@@ -107,6 +124,7 @@
 				6DBACE661D568B3A00FC4FEC /* User.swift */,
 				6DBACE681D568B9200FC4FEC /* Payment.swift */,
 				6DBACE6A1D56A20F00FC4FEC /* PageViewController.swift */,
+				6DBACE7A1D574C0500FC4FEC /* NotificationsViewController.swift */,
 			);
 			path = "mlhprime-hackbro";
 			sourceTree = "<group>";
@@ -138,6 +156,7 @@
 				6D0F9FC91D5672EA003B2340 /* Sources */,
 				6D0F9FCA1D5672EA003B2340 /* Frameworks */,
 				6D0F9FCB1D5672EA003B2340 /* Resources */,
+				6DBACE711D570E0100FC4FEC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -213,6 +232,7 @@
 				6D0F9FDB1D5672EA003B2340 /* LaunchScreen.storyboard in Resources */,
 				6D0F9FD81D5672EA003B2340 /* Assets.xcassets in Resources */,
 				6D0F9FD61D5672EA003B2340 /* Main.storyboard in Resources */,
+				6DBACE781D570E1A00FC4FEC /* TwitterKitResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +245,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6DBACE711D570E0100FC4FEC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 7783b4ef3b2de2a984eadc43384eebe2b60ae7dc c97a6c77f6d607eefc8efa9a23442c5bacef6317214ca9ee91acb4dbfde79b2d";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6D0F9FC91D5672EA003B2340 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -235,6 +271,7 @@
 				6D0F9FF11D5676D9003B2340 /* PaymentListViewController.swift in Sources */,
 				6D0F9FD31D5672EA003B2340 /* LoginViewController.swift in Sources */,
 				6D0F9FF51D5676FA003B2340 /* EditPaymentViewController.swift in Sources */,
+				6DBACE7B1D574C0500FC4FEC /* NotificationsViewController.swift in Sources */,
 				6DBACE671D568B3A00FC4FEC /* User.swift in Sources */,
 				6D0F9FF31D5676ED003B2340 /* SetUpPaymentViewController.swift in Sources */,
 				6DBACE691D568B9200FC4FEC /* Payment.swift in Sources */,
@@ -369,6 +406,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "mlhprime-hackbro/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hackathon.mlhprime-hackbro";
@@ -380,6 +421,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "mlhprime-hackbro/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hackathon.mlhprime-hackbro";
