@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D0F9FD11D5672EA003B2340 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0F9FD01D5672EA003B2340 /* AppDelegate.swift */; };
+		6D0F9FD31D5672EA003B2340 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0F9FD21D5672EA003B2340 /* LoginViewController.swift */; };
+		6D0F9FD61D5672EA003B2340 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D0F9FD41D5672EA003B2340 /* Main.storyboard */; };
+		6D0F9FD81D5672EA003B2340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D0F9FD71D5672EA003B2340 /* Assets.xcassets */; };
+		6D0F9FDB1D5672EA003B2340 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D0F9FD91D5672EA003B2340 /* LaunchScreen.storyboard */; };
+		6D0F9FE61D5672EA003B2340 /* mlhprime_hackbroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0F9FE51D5672EA003B2340 /* mlhprime_hackbroTests.swift */; };
+		6D0F9FF11D5676D9003B2340 /* PaymentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0F9FF01D5676D9003B2340 /* PaymentListViewController.swift */; };
+		6D0F9FF31D5676ED003B2340 /* SetUpPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0F9FF21D5676ED003B2340 /* SetUpPaymentViewController.swift */; };
+		6D0F9FF51D5676FA003B2340 /* EditPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0F9FF41D5676FA003B2340 /* EditPaymentViewController.swift */; };
+		6D0F9FF71D56770E003B2340 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0F9FF61D56770E003B2340 /* SignUpViewController.swift */; };
+		6DBACE671D568B3A00FC4FEC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBACE661D568B3A00FC4FEC /* User.swift */; };
+		6DBACE691D568B9200FC4FEC /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBACE681D568B9200FC4FEC /* Payment.swift */; };
+		6DBACE6B1D56A20F00FC4FEC /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBACE6A1D56A20F00FC4FEC /* PageViewController.swift */; };
+		6DBACE701D56F1A300FC4FEC /* Untitled drawing.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DBACE6F1D56F1A300FC4FEC /* Untitled drawing.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D0F9FE21D5672EA003B2340 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D0F9FC51D5672EA003B2340 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D0F9FCC1D5672EA003B2340;
+			remoteInfo = "mlhprime-hackbro";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6D0F9FCD1D5672EA003B2340 /* mlhprime-hackbro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mlhprime-hackbro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D0F9FD01D5672EA003B2340 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6D0F9FD21D5672EA003B2340 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6D0F9FD51D5672EA003B2340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6D0F9FD71D5672EA003B2340 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D0F9FDA1D5672EA003B2340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D0F9FDC1D5672EA003B2340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D0F9FE11D5672EA003B2340 /* mlhprime-hackbroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mlhprime-hackbroTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D0F9FE51D5672EA003B2340 /* mlhprime_hackbroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mlhprime_hackbroTests.swift; sourceTree = "<group>"; };
+		6D0F9FE71D5672EA003B2340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D0F9FF01D5676D9003B2340 /* PaymentListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentListViewController.swift; sourceTree = "<group>"; };
+		6D0F9FF21D5676ED003B2340 /* SetUpPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUpPaymentViewController.swift; sourceTree = "<group>"; };
+		6D0F9FF41D5676FA003B2340 /* EditPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPaymentViewController.swift; sourceTree = "<group>"; };
+		6D0F9FF61D56770E003B2340 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		6DBACE661D568B3A00FC4FEC /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6DBACE681D568B9200FC4FEC /* Payment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		6DBACE6A1D56A20F00FC4FEC /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		6DBACE6F1D56F1A300FC4FEC /* Untitled drawing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Untitled drawing.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D0F9FCA1D5672EA003B2340 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D0F9FDE1D5672EA003B2340 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D0F9FC41D5672EA003B2340 = {
+			isa = PBXGroup;
+			children = (
+				6D0F9FCF1D5672EA003B2340 /* mlhprime-hackbro */,
+				6D0F9FE41D5672EA003B2340 /* mlhprime-hackbroTests */,
+				6D0F9FCE1D5672EA003B2340 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D0F9FCE1D5672EA003B2340 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D0F9FCD1D5672EA003B2340 /* mlhprime-hackbro.app */,
+				6D0F9FE11D5672EA003B2340 /* mlhprime-hackbroTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D0F9FCF1D5672EA003B2340 /* mlhprime-hackbro */ = {
+			isa = PBXGroup;
+			children = (
+				6DBACE6C1D56ED2300FC4FEC /* Images */,
+				6D0F9FD01D5672EA003B2340 /* AppDelegate.swift */,
+				6D0F9FD41D5672EA003B2340 /* Main.storyboard */,
+				6D0F9FD71D5672EA003B2340 /* Assets.xcassets */,
+				6D0F9FD91D5672EA003B2340 /* LaunchScreen.storyboard */,
+				6D0F9FDC1D5672EA003B2340 /* Info.plist */,
+				6D0F9FD21D5672EA003B2340 /* LoginViewController.swift */,
+				6D0F9FF01D5676D9003B2340 /* PaymentListViewController.swift */,
+				6D0F9FF21D5676ED003B2340 /* SetUpPaymentViewController.swift */,
+				6D0F9FF41D5676FA003B2340 /* EditPaymentViewController.swift */,
+				6D0F9FF61D56770E003B2340 /* SignUpViewController.swift */,
+				6DBACE661D568B3A00FC4FEC /* User.swift */,
+				6DBACE681D568B9200FC4FEC /* Payment.swift */,
+				6DBACE6A1D56A20F00FC4FEC /* PageViewController.swift */,
+			);
+			path = "mlhprime-hackbro";
+			sourceTree = "<group>";
+		};
+		6D0F9FE41D5672EA003B2340 /* mlhprime-hackbroTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D0F9FE51D5672EA003B2340 /* mlhprime_hackbroTests.swift */,
+				6D0F9FE71D5672EA003B2340 /* Info.plist */,
+			);
+			path = "mlhprime-hackbroTests";
+			sourceTree = "<group>";
+		};
+		6DBACE6C1D56ED2300FC4FEC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6DBACE6F1D56F1A300FC4FEC /* Untitled drawing.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D0F9FCC1D5672EA003B2340 /* mlhprime-hackbro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D0F9FEA1D5672EA003B2340 /* Build configuration list for PBXNativeTarget "mlhprime-hackbro" */;
+			buildPhases = (
+				6D0F9FC91D5672EA003B2340 /* Sources */,
+				6D0F9FCA1D5672EA003B2340 /* Frameworks */,
+				6D0F9FCB1D5672EA003B2340 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mlhprime-hackbro";
+			productName = "mlhprime-hackbro";
+			productReference = 6D0F9FCD1D5672EA003B2340 /* mlhprime-hackbro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6D0F9FE01D5672EA003B2340 /* mlhprime-hackbroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D0F9FED1D5672EA003B2340 /* Build configuration list for PBXNativeTarget "mlhprime-hackbroTests" */;
+			buildPhases = (
+				6D0F9FDD1D5672EA003B2340 /* Sources */,
+				6D0F9FDE1D5672EA003B2340 /* Frameworks */,
+				6D0F9FDF1D5672EA003B2340 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D0F9FE31D5672EA003B2340 /* PBXTargetDependency */,
+			);
+			name = "mlhprime-hackbroTests";
+			productName = "mlhprime-hackbroTests";
+			productReference = 6D0F9FE11D5672EA003B2340 /* mlhprime-hackbroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D0F9FC51D5672EA003B2340 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Marisa Gomez";
+				TargetAttributes = {
+					6D0F9FCC1D5672EA003B2340 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					6D0F9FE01D5672EA003B2340 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 6D0F9FCC1D5672EA003B2340;
+					};
+				};
+			};
+			buildConfigurationList = 6D0F9FC81D5672EA003B2340 /* Build configuration list for PBXProject "mlhprime-hackbro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D0F9FC41D5672EA003B2340;
+			productRefGroup = 6D0F9FCE1D5672EA003B2340 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D0F9FCC1D5672EA003B2340 /* mlhprime-hackbro */,
+				6D0F9FE01D5672EA003B2340 /* mlhprime-hackbroTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D0F9FCB1D5672EA003B2340 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DBACE701D56F1A300FC4FEC /* Untitled drawing.png in Resources */,
+				6D0F9FDB1D5672EA003B2340 /* LaunchScreen.storyboard in Resources */,
+				6D0F9FD81D5672EA003B2340 /* Assets.xcassets in Resources */,
+				6D0F9FD61D5672EA003B2340 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D0F9FDF1D5672EA003B2340 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D0F9FC91D5672EA003B2340 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D0F9FF71D56770E003B2340 /* SignUpViewController.swift in Sources */,
+				6DBACE6B1D56A20F00FC4FEC /* PageViewController.swift in Sources */,
+				6D0F9FF11D5676D9003B2340 /* PaymentListViewController.swift in Sources */,
+				6D0F9FD31D5672EA003B2340 /* LoginViewController.swift in Sources */,
+				6D0F9FF51D5676FA003B2340 /* EditPaymentViewController.swift in Sources */,
+				6DBACE671D568B3A00FC4FEC /* User.swift in Sources */,
+				6D0F9FF31D5676ED003B2340 /* SetUpPaymentViewController.swift in Sources */,
+				6DBACE691D568B9200FC4FEC /* Payment.swift in Sources */,
+				6D0F9FD11D5672EA003B2340 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D0F9FDD1D5672EA003B2340 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D0F9FE61D5672EA003B2340 /* mlhprime_hackbroTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D0F9FE31D5672EA003B2340 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D0F9FCC1D5672EA003B2340 /* mlhprime-hackbro */;
+			targetProxy = 6D0F9FE21D5672EA003B2340 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6D0F9FD41D5672EA003B2340 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D0F9FD51D5672EA003B2340 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6D0F9FD91D5672EA003B2340 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D0F9FDA1D5672EA003B2340 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D0F9FE81D5672EA003B2340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D0F9FE91D5672EA003B2340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D0F9FEB1D5672EA003B2340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "mlhprime-hackbro/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hackathon.mlhprime-hackbro";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6D0F9FEC1D5672EA003B2340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "mlhprime-hackbro/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hackathon.mlhprime-hackbro";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6D0F9FEE1D5672EA003B2340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "mlhprime-hackbroTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hackathon.mlhprime-hackbroTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mlhprime-hackbro.app/mlhprime-hackbro";
+			};
+			name = Debug;
+		};
+		6D0F9FEF1D5672EA003B2340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "mlhprime-hackbroTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hackathon.mlhprime-hackbroTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mlhprime-hackbro.app/mlhprime-hackbro";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D0F9FC81D5672EA003B2340 /* Build configuration list for PBXProject "mlhprime-hackbro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D0F9FE81D5672EA003B2340 /* Debug */,
+				6D0F9FE91D5672EA003B2340 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D0F9FEA1D5672EA003B2340 /* Build configuration list for PBXNativeTarget "mlhprime-hackbro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D0F9FEB1D5672EA003B2340 /* Debug */,
+				6D0F9FEC1D5672EA003B2340 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D0F9FED1D5672EA003B2340 /* Build configuration list for PBXNativeTarget "mlhprime-hackbroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D0F9FEE1D5672EA003B2340 /* Debug */,
+				6D0F9FEF1D5672EA003B2340 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D0F9FC51D5672EA003B2340 /* Project object */;
+}
