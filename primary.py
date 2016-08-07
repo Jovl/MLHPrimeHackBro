@@ -5,19 +5,21 @@ Description: This project is to be a recurring payments management app.
 This File: Will run the backend of the website and control the Twilio functionality.
 """
 
-from flask import Flask, render_template, request
+from flask import Flask, request
 from twilio import twiml
 from twilio.rest import TwilioRestClient
+from time import sleep
 
 # allows for use of the flask decorator
 app = Flask(__name__)
 
 # Use this to send Twilio API calls
-client = TwilioRestClient('ACCOUNT_SID_HERE', 'AUTH_TOKEN')
+client = TwilioRestClient('ACff5b36cf0ccdc108d7297d213891351b', '2c36f2c692e1a0f87dbc0c91d33135e6')
 
 
-@app.route('/', methods=['POST'])  # pulls up the homepage with the standard URL
+@app.route('/receive', methods=['GET', 'POST'])  # WIP
 def home1():
+
     text = request.form['Body']
     print text
     response = twiml.Response()
@@ -25,27 +27,28 @@ def home1():
     return str(response)
 
 
-@app.route('/home')  # pulls up the home page from a link on the site
-def home2():
-    if days == 5:
-        client.messages.create(to='your phone number', from_='your twilio number', body='What you want to send them')
-    return render_template()
+@app.route('/notify')  # path is temporary. Not sure what to name it.
+def notify():
+    # TODO: Call database for the day of a warning and the user phone number
+
+    for daysleft in range(10, warning, -1):  # demo purposes simulates days counting down
+        print daysleft + " days left"
+
+        if daysleft == warning:
+            client.messages.create(to=phone, from_='3862678050', body='What you want to send them')
+        sleep(1)
+
+    return
 
 
-@app.route('/login')  # pulls up the login screen
-def login():
-    return render_template()
-
-
-@app.route('/profile')  # pulls up the profile section
-def profile():
-    # TODO: if not signed in prompt for sign up or login
-    return render_template()
-
-
-@app.route('/signup')
+@app.route('/signup', methods=['POST'])
 def signup():
-    return render_template()
+    warning = request.form['Days']  # will hold the amount of days before a payment notification is sent
+    phone = request.form['Phone']  # will receive the user's phone number
+
+    # TODO: store values in the database
+
+    return
 
 
 if __name__ == "__main__":
