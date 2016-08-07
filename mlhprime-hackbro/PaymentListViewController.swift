@@ -13,11 +13,6 @@ class PaymentListViewController: UIViewController, UITableViewDelegate, UITableV
     var payments: [Payment] = [Payment]()
     
     @IBOutlet weak var paymentlist: UITableView!
-    @IBOutlet weak var editView: UIView!
-    @IBOutlet weak var editViewName: UILabel!
-    @IBOutlet weak var editViewDate: UILabel!
-    @IBOutlet weak var editViewAmount: UILabel!
-    @IBOutlet weak var editViewFrequency: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,7 +65,7 @@ class PaymentListViewController: UIViewController, UITableViewDelegate, UITableV
         delete.backgroundColor = UIColor.redColor()
         
         let edit = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Edit" , handler: { (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
-            self.editView.hidden = false
+//            self.editView.hidden = false
         })
         edit.backgroundColor = UIColor.greenColor()
         
@@ -81,6 +76,6 @@ class PaymentListViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     @IBAction func exitEdit(sender: AnyObject) {
-        editView.hidden = true
+//        editView.hidden = true
     }
 }

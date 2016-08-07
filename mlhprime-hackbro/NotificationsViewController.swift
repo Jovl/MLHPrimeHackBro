@@ -34,9 +34,9 @@ class NotificationsViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell:UITableViewCell = notifications.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
+        let cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
         
-        cell.textLabel?.text = self.notifications[indexPath.row].name
+        cell.textLabel?.text = Array(self.notifications.values)[indexPath.row]
         
         return cell
     }
