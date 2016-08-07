@@ -15,12 +15,13 @@ class LoginViewController: UIViewController {
         
         let logInButton = TWTRLogInButton { (session, error) in
             if let unwrappedSession = session {
-                let alert = UIAlertController(title: "Logged In",
-                    message: "User \(unwrappedSession.userName) has logged in",
-                    preferredStyle: UIAlertControllerStyle.Alert
-                )
-                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-                self.presentViewController(alert, animated: true, completion: nil)
+//                let alert = UIAlertController(title: "Logged In",
+//                    message: "User \(unwrappedSession.userName) has logged in",
+//                    preferredStyle: UIAlertControllerStyle.Alert
+//                )
+//                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+//                self.presentViewController(alert, animated: true, completion: nil)
+                self.presentViewController(PaymentListViewController(), animated: true, completion: { })
             } else {
                 NSLog("Login error: %@", error!.localizedDescription);
             }

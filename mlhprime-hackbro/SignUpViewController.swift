@@ -31,6 +31,6 @@ class SignUpViewController: UIViewController {
     }
 
     @IBAction func cancel(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true) { }
+        self.navigationController?.popViewControllerAnimated(true)
     }
 }

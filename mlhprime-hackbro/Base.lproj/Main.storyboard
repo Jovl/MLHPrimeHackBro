@@ -61,9 +61,18 @@
                                     <rect key="frame" x="248" y="385" width="38" height="30"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="l8s-Wf-ONO" kind="show" id="zbu-fQ-hIP"/>
+                                    <segue destination="l8s-Wf-ONO" kind="show" id="Np3-Tn-boG"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PayCycle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiW-Jk-DBE">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="98" y="168" width="204" height="70"/>
+                                </variation>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqC-Ej-zmV">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Sign Up">
@@ -73,7 +82,7 @@
                                     <rect key="frame" x="104" y="385" width="55" height="30"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="jPS-x2-m2R" kind="show" id="KCg-Nv-Tvd"/>
+                                    <segue destination="jPS-x2-m2R" kind="show" id="Q8e-rJ-BMe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -85,6 +94,7 @@
                                 <exclude reference="tJv-LI-SKZ"/>
                                 <exclude reference="OVm-rz-wAF"/>
                                 <exclude reference="UVo-YY-cOa"/>
+                                <exclude reference="JiW-Jk-DBE"/>
                                 <exclude reference="fqC-Ej-zmV"/>
                             </mask>
                         </variation>
@@ -95,6 +105,7 @@
                                 <include reference="tJv-LI-SKZ"/>
                                 <include reference="OVm-rz-wAF"/>
                                 <include reference="UVo-YY-cOa"/>
+                                <include reference="JiW-Jk-DBE"/>
                                 <include reference="fqC-Ej-zmV"/>
                             </mask>
                         </variation>
@@ -196,24 +207,26 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vrc-DD-2AM">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="20"/>
                                 <state key="normal" title="Sign up">
                                     <color key="titleColor" red="0.015686274510000001" green="0.42352941179999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="232" y="450" width="52" height="30"/>
+                                    <rect key="frame" x="232" y="448" width="73" height="32"/>
                                 </variation>
                                 <connections>
                                     <action selector="signUp:" destination="jPS-x2-m2R" eventType="touchUpInside" id="FTq-0h-sJY"/>
-                                    <segue destination="l8s-Wf-ONO" kind="show" id="6cc-Ro-GZS"/>
+                                    <segue destination="l8s-Wf-ONO" kind="show" id="hZq-22-EJC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VfL-34-Ng4">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="20"/>
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" red="0.015686274510000001" green="0.42352941179999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="105" y="450" width="48" height="30"/>
+                                    <rect key="frame" x="105" y="448" width="74" height="32"/>
                                 </variation>
                                 <connections>
                                     <action selector="cancel:" destination="jPS-x2-m2R" eventType="touchUpInside" id="Lff-uG-R4L"/>
@@ -266,7 +279,6 @@
                         <outlet property="accountNumber" destination="lQG-ft-kqM" id="Mo2-4L-sdT"/>
                         <outlet property="password" destination="JrD-p9-H1y" id="iDk-Gq-bhH"/>
                         <outlet property="routingNumber" destination="af6-c4-xmF" id="XvD-c4-r1e"/>
-                        <outlet property="signUp" destination="Vrc-DD-2AM" id="8yQ-OH-Cqz"/>
                         <outlet property="username" destination="vMQ-3U-0kt" id="UNi-jb-0Q8"/>
                     </connections>
                 </viewController>
@@ -623,36 +635,69 @@
                                     <action selector="selectDay:" destination="P0G-xR-dtP" eventType="touchUpInside" id="AUT-aK-1f9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7c-os-MUX">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="20"/>
-                                <state key="normal" title="Edit">
-                                    <color key="titleColor" red="0.015686274510000001" green="0.42352941179999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="227" y="673" width="60" height="40"/>
-                                </variation>
-                                <connections>
-                                    <action selector="saveNewPayment:" destination="P0G-xR-dtP" eventType="touchUpInside" id="fYH-SW-RYV"/>
-                                    <segue destination="76d-56-PIG" kind="show" id="9B0-W1-0Eh"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJL-dx-FAf">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="W85-ID-lHP"/>
+                                    <constraint firstAttribute="height" constant="43" id="fMx-Dh-TSD"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="20"/>
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" red="0.015686274510000001" green="0.42352941179999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="113" y="672" width="66" height="43"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="W85-ID-lHP"/>
+                                        <exclude reference="fMx-Dh-TSD"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="W85-ID-lHP"/>
+                                        <include reference="fMx-Dh-TSD"/>
+                                    </mask>
                                 </variation>
                                 <connections>
                                     <action selector="cancel:" destination="P0G-xR-dtP" eventType="touchUpInside" id="blH-21-nJk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7c-os-MUX">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Dwu-h4-bK3"/>
+                                    <constraint firstAttribute="height" constant="40" id="W2J-Mg-4Tp"/>
+                                    <constraint firstAttribute="width" constant="60" id="eId-Pm-KIw">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="86"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="20"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.015686274510000001" green="0.42352941179999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Dwu-h4-bK3"/>
+                                        <exclude reference="W2J-Mg-4Tp"/>
+                                        <exclude reference="eId-Pm-KIw"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Dwu-h4-bK3"/>
+                                        <include reference="W2J-Mg-4Tp"/>
+                                        <include reference="eId-Pm-KIw"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="76d-56-PIG" kind="show" id="9B0-W1-0Eh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="p7c-os-MUX" firstAttribute="leading" secondItem="MJL-dx-FAf" secondAttribute="trailing" constant="41" id="1SW-k8-7pm">
+                                <variation key="heightClass=regular-widthClass=compact" constant="36"/>
+                            </constraint>
                             <constraint firstItem="XQI-ad-4Pa" firstAttribute="top" secondItem="wXC-se-cuo" secondAttribute="bottom" constant="23" id="1dp-eP-QZS"/>
                             <constraint firstItem="hyX-KE-cc5" firstAttribute="leading" secondItem="jXg-LB-Yp6" secondAttribute="leadingMargin" constant="16" id="27X-6S-ck2"/>
                             <constraint firstItem="GKX-2e-qSA" firstAttribute="leading" secondItem="wXC-se-cuo" secondAttribute="trailing" constant="8" id="3jl-Eh-sP9"/>
@@ -660,7 +705,11 @@
                             <constraint firstAttribute="trailingMargin" secondItem="iTG-7t-qDX" secondAttribute="trailing" constant="16" id="6So-Yd-Gpv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="MBT-jK-IOn" secondAttribute="trailing" constant="16" id="7QJ-nd-Luh"/>
                             <constraint firstItem="Has-bZ-nxS" firstAttribute="leading" secondItem="uTJ-Zd-Tlg" secondAttribute="trailing" constant="18" id="7rL-TB-qQm"/>
+                            <constraint firstItem="VTa-hO-dPX" firstAttribute="top" secondItem="p7c-os-MUX" secondAttribute="bottom" constant="87" id="8de-ro-Tuc"/>
                             <constraint firstItem="Has-bZ-nxS" firstAttribute="top" secondItem="wXC-se-cuo" secondAttribute="bottom" constant="23" id="AZm-K0-PXA"/>
+                            <constraint firstItem="p7c-os-MUX" firstAttribute="centerX" secondItem="iTG-7t-qDX" secondAttribute="centerX" id="Aos-dv-Fxd">
+                                <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                            </constraint>
                             <constraint firstItem="hyX-KE-cc5" firstAttribute="top" secondItem="Gcd-G7-zUs" secondAttribute="bottom" constant="15" id="D0S-29-dy1">
                                 <variation key="heightClass=regular-widthClass=compact" constant="13"/>
                             </constraint>
@@ -677,6 +726,7 @@
                             <constraint firstItem="kKS-iu-262" firstAttribute="leading" secondItem="Is8-Vz-mic" secondAttribute="trailing" constant="-2" id="WwN-8u-ANW"/>
                             <constraint firstItem="4Mb-Y9-jet" firstAttribute="leading" secondItem="Has-bZ-nxS" secondAttribute="trailing" constant="-2" id="Y4Z-oK-kwR"/>
                             <constraint firstItem="vvK-ho-E3f" firstAttribute="top" secondItem="iTG-7t-qDX" secondAttribute="bottom" constant="13" id="YDN-2f-cFj"/>
+                            <constraint firstItem="VTa-hO-dPX" firstAttribute="top" secondItem="MJL-dx-FAf" secondAttribute="bottom" constant="86" id="ZSJ-BH-DZY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="V7e-7U-DoC" secondAttribute="trailing" constant="34" id="ZbC-3M-hmg"/>
                             <constraint firstItem="fCK-YP-rrq" firstAttribute="top" secondItem="wXC-se-cuo" secondAttribute="bottom" constant="23" id="Zrv-MF-H3F"/>
                             <constraint firstItem="MBT-jK-IOn" firstAttribute="leading" secondItem="Gcd-G7-zUs" secondAttribute="trailing" constant="13" id="cAB-pm-Ydg"/>
@@ -700,6 +750,9 @@
                             <constraint firstItem="VTa-hO-dPX" firstAttribute="top" secondItem="4Mb-Y9-jet" secondAttribute="bottom" constant="197" id="wQA-m8-uAB"/>
                             <constraint firstItem="Gcd-G7-zUs" firstAttribute="top" secondItem="o6M-kE-0io" secondAttribute="bottom" constant="32" id="xeG-Oz-Cot"/>
                             <constraint firstItem="Is8-Vz-mic" firstAttribute="leading" secondItem="XQI-ad-4Pa" secondAttribute="trailing" constant="-1" id="yRq-Ed-H2x"/>
+                            <constraint firstItem="p7c-os-MUX" firstAttribute="leading" secondItem="MJL-dx-FAf" secondAttribute="trailing" constant="41" id="ymO-r2-8pR">
+                                <variation key="heightClass=regular-widthClass=compact" constant="36"/>
+                            </constraint>
                             <constraint firstItem="XQI-ad-4Pa" firstAttribute="leading" secondItem="fCK-YP-rrq" secondAttribute="trailing" constant="-1" id="yn3-qW-MjB"/>
                             <constraint firstItem="kYd-YE-gL5" firstAttribute="leading" secondItem="jXg-LB-Yp6" secondAttribute="leadingMargin" constant="-20" id="zfx-2q-aBo"/>
                         </constraints>
@@ -723,8 +776,8 @@
                                 <exclude reference="Is8-Vz-mic"/>
                                 <exclude reference="kKS-iu-262"/>
                                 <exclude reference="V7e-7U-DoC"/>
-                                <exclude reference="p7c-os-MUX"/>
                                 <exclude reference="MJL-dx-FAf"/>
+                                <exclude reference="p7c-os-MUX"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="OgA-WO-vgj"/>
@@ -766,8 +819,13 @@
                                 <exclude reference="ZbC-3M-hmg"/>
                                 <exclude reference="gba-gh-1dM"/>
                                 <exclude reference="oIm-1X-RBR"/>
+                                <exclude reference="1SW-k8-7pm"/>
+                                <exclude reference="Aos-dv-Fxd"/>
+                                <exclude reference="ymO-r2-8pR"/>
+                                <exclude reference="8de-ro-Tuc"/>
                                 <exclude reference="DIh-Qx-Hzn"/>
                                 <exclude reference="Pdw-5d-ioP"/>
+                                <exclude reference="ZSJ-BH-DZY"/>
                                 <exclude reference="iw6-Fi-dTs"/>
                                 <exclude reference="nHh-WY-A1E"/>
                                 <exclude reference="rZ2-W3-iMn"/>
@@ -796,8 +854,8 @@
                                 <include reference="Is8-Vz-mic"/>
                                 <include reference="kKS-iu-262"/>
                                 <include reference="V7e-7U-DoC"/>
-                                <include reference="p7c-os-MUX"/>
                                 <include reference="MJL-dx-FAf"/>
+                                <include reference="p7c-os-MUX"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="OgA-WO-vgj"/>
@@ -839,8 +897,13 @@
                                 <include reference="ZbC-3M-hmg"/>
                                 <include reference="gba-gh-1dM"/>
                                 <include reference="oIm-1X-RBR"/>
+                                <include reference="1SW-k8-7pm"/>
+                                <include reference="Aos-dv-Fxd"/>
+                                <include reference="ymO-r2-8pR"/>
+                                <include reference="8de-ro-Tuc"/>
                                 <include reference="DIh-Qx-Hzn"/>
                                 <include reference="Pdw-5d-ioP"/>
+                                <include reference="ZSJ-BH-DZY"/>
                                 <include reference="iw6-Fi-dTs"/>
                                 <include reference="nHh-WY-A1E"/>
                                 <include reference="rZ2-W3-iMn"/>
@@ -857,7 +920,6 @@
                         <outlet property="paymentFrequency" destination="wXC-se-cuo" id="ZF7-Uu-G0S"/>
                         <outlet property="paymentName" destination="MBT-jK-IOn" id="AB0-Hi-urV"/>
                         <outlet property="saturday" destination="V7e-7U-DoC" id="RoM-XG-Skw"/>
-                        <outlet property="saveNewPayment" destination="p7c-os-MUX" id="9q2-bc-gl4"/>
                         <outlet property="sunday" destination="Has-bZ-nxS" id="PkV-jD-uLS"/>
                         <outlet property="thursday" destination="Is8-Vz-mic" id="6IE-Jm-iLS"/>
                         <outlet property="tuesday" destination="fCK-YP-rrq" id="P3p-ss-gu2"/>
@@ -905,9 +967,6 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="333" y="752" width="47" height="31"/>
                                 </variation>
-                                <connections>
-                                    <action selector="save:" destination="76d-56-PIG" eventType="touchUpInside" id="Fb0-9D-MEz"/>
-                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cwr-wE-LBt">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -946,7 +1005,6 @@
                     </view>
                     <connections>
                         <outlet property="add" destination="e2d-G9-rte" id="Jv9-yv-2Yc"/>
-                        <outlet property="save" destination="KM7-TT-m0p" id="VM1-HQ-E0N"/>
                         <outlet property="tableView" destination="cwr-wE-LBt" id="EsN-CR-IB6"/>
                     </connections>
                 </viewController>
@@ -1064,92 +1122,6 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqD-Hx-rL0">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kp0-kJ-WiD">
-                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="25"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="139" y="17" width="83" height="44"/>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$11.25" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9l6-FN-fu0">
-                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="53"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="88" y="134" width="184" height="83"/>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recurring monthly" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYY-I7-FLc">
-                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="102" y="233" width="156" height="21"/>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14 November, 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOo-jK-KgQ">
-                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="83" y="91" width="195" height="21"/>
-                                        </variation>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRa-Og-atc">
-                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" title="Edit">
-                                            <color key="titleColor" red="0.015686274510000001" green="0.42352941179999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="228" y="292" width="30" height="30"/>
-                                        </variation>
-                                        <connections>
-                                            <action selector="editPayment:" destination="l8s-Wf-ONO" eventType="touchUpInside" id="nCl-oz-zaZ"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMd-if-x2e">
-                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" title="Cancel">
-                                            <color key="titleColor" red="0.015686274510000001" green="0.42352941179999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="110" y="292" width="48" height="30"/>
-                                        </variation>
-                                        <connections>
-                                            <action selector="exitEdit:" destination="l8s-Wf-ONO" eventType="touchUpInside" id="zTL-Kd-gDc"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="default">
-                                    <mask key="subviews">
-                                        <exclude reference="kp0-kJ-WiD"/>
-                                        <exclude reference="9l6-FN-fu0"/>
-                                        <exclude reference="GYY-I7-FLc"/>
-                                        <exclude reference="DOo-jK-KgQ"/>
-                                        <exclude reference="pRa-Og-atc"/>
-                                        <exclude reference="fMd-if-x2e"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="161" width="360" height="366"/>
-                                    <mask key="subviews">
-                                        <include reference="kp0-kJ-WiD"/>
-                                        <include reference="9l6-FN-fu0"/>
-                                        <include reference="GYY-I7-FLc"/>
-                                        <include reference="DOo-jK-KgQ"/>
-                                        <include reference="pRa-Og-atc"/>
-                                        <include reference="fMd-if-x2e"/>
-                                    </mask>
-                                </variation>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNz-2S-ATO">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <constraints>
@@ -1205,7 +1177,6 @@
                                 <exclude reference="l6w-ZW-pgP"/>
                                 <exclude reference="zqB-vF-5GQ"/>
                                 <exclude reference="RDD-cJ-x1J"/>
-                                <exclude reference="hqD-Hx-rL0"/>
                                 <exclude reference="kNz-2S-ATO"/>
                             </mask>
                             <mask key="constraints">
@@ -1235,7 +1206,6 @@
                                 <include reference="l6w-ZW-pgP"/>
                                 <include reference="zqB-vF-5GQ"/>
                                 <include reference="RDD-cJ-x1J"/>
-                                <include reference="hqD-Hx-rL0"/>
                                 <include reference="kNz-2S-ATO"/>
                             </mask>
                             <mask key="constraints">
@@ -1261,12 +1231,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Jmb-uk-GfB"/>
                     <connections>
-                        <outlet property="editView" destination="hqD-Hx-rL0" id="ClI-HH-aZi"/>
-                        <outlet property="editViewAmount" destination="9l6-FN-fu0" id="Cc7-un-Cte"/>
-                        <outlet property="editViewDate" destination="DOo-jK-KgQ" id="Aeh-h8-k9A"/>
-                        <outlet property="editViewFrequency" destination="GYY-I7-FLc" id="onv-Yu-gR2"/>
-                        <outlet property="editViewName" destination="kp0-kJ-WiD" id="oQT-ER-Ykt"/>
-                        <outlet property="exitEdit" destination="fMd-if-x2e" id="w3z-tY-sqz"/>
                         <outlet property="paymentlist" destination="Bef-Po-YWo" id="syQ-Ua-ydb"/>
                     </connections>
                 </viewController>
@@ -1295,6 +1259,6 @@
         <image name="Untitled drawing.png" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6cc-Ro-GZS"/>
+        <segue reference="hZq-22-EJC"/>
     </inferredMetricsTieBreakers>
 </document>

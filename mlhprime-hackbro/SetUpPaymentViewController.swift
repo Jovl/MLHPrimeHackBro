@@ -7,9 +7,11 @@
 //
 import UIKit
 
-class SetUpPaymentViewController: UIViewController {
+class SetUpPaymentViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     var user: User = User()
     var payments: [Payment] = [Payment]()
+    var numbers: [Int] = [Int]()
+    var frequency: [String] = [String]()
     
     @IBOutlet weak var paymentName: UITextField!
     @IBOutlet weak var paymentAmount: UITextField!
@@ -25,12 +27,18 @@ class SetUpPaymentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9 , 10]
+        frequency = ["Daily", "Weekly", "Biweekly", "Monthly", "Yearly"]
+        
+        typePicker.delegate = self
+        typePicker.dataSource = self
+        paymentFrequency.delegate = self
+        paymentFrequency.dataSource = self
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     
@@ -46,13 +54,37 @@ class SetUpPaymentViewController: UIViewController {
         }
     }
     
-//    @IBAction func cancel(sender: AnyObject) {
-//        self.dismissViewControllerAnimated(false) { }
-//    }
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
     
-//    @IBAction func saveNewPayment(sender: AnyObject) {
-//        
-//    }
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        if(pickerView == typePicker) {
+            return numbers.count
+        } else {
+            return frequency.count
+        }
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        if(pickerView == typePicker) {
+            return String(numbers[row])
+        } else {
+            return frequency[row]
+        }
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+    }
+    
+    @IBAction func cancel(sender: AnyObject) {
+        self.navigationController!.popViewControllerAnimated(false)
+    }
+    
+    @IBAction func saveNewPayment(sender: AnyObject) {
+        
+    }
     
     func pushNewPayment() {
         
