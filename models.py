@@ -24,3 +24,13 @@ def select_phone_warning():
     con.commit()
     con.close()
     return info
+
+def select_phone_name():
+    phone = ''
+    name = ''
+    con = sql.connect("database.db")
+    cur = con.cursor()
+    cur.execute("SELECT name,phone FROM account_holder",
+                (warning, phone))
+    con.commit()
+    con.close()
